@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Background HTTP for NativeScript</title>
+	<title>&quot;background-http&quot; | Background HTTP for NativeScript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -51,57 +51,100 @@
 	<div class="tsd-page-title">
 		<div class="container">
 			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">&quot;background-http&quot;</a>
+				</li>
 			</ul>
-			<h1> Background HTTP for NativeScript</h1>
+			<h1>Module &quot;background-http&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<p>A cross platform plugin for <a href="http://www.nativescript.org">the NativeScript framework</a>.</p>
-				<p>Supports background upload for</p>
-				<ul>
-					<li>iOS</li>
-					<li>Android</li>
-				</ul>
-				<h3 id="how-to-background-upload">How-to Background Upload</h3>
-				<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> background_http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"background-http"</span>);
-<span class="hljs-keyword">var</span> session = background_http.session(<span class="hljs-string">"image-upload"</span>);
-
-<span class="hljs-keyword">var</span> request = {
-    url: <span class="hljs-string">"http://myserver.com"</span>,
-    method: <span class="hljs-string">"POST"</span>,
-    headers: {
-        <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/octet-stream"</span>,
-        <span class="hljs-string">"File-Name"</span>: <span class="hljs-string">"bigpig.jpg"</span>
-    },
-    description: <span class="hljs-string">"{ 'uploading': 'bigpig.jpg' }"</span>
-};
-
-<span class="hljs-keyword">var</span> task = session.uploadFile(<span class="hljs-string">"file/path/bigpig.jpg"</span>, request);
-
-task.on(<span class="hljs-string">"progress"</span>, logEvent);
-task.on(<span class="hljs-string">"error"</span>, logEvent);
-task.on(<span class="hljs-string">"complete"</span>, logEvent);
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onEvent</span>(<span class="hljs-params">e</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(e.eventName);
-}
-</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="interfaces/_background_http_.erroreventdata.html" class="tsd-kind-icon">Error<wbr>Event<wbr>Data</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="interfaces/_background_http_.progresseventdata.html" class="tsd-kind-icon">Progress<wbr>Event<wbr>Data</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="interfaces/_background_http_.request.html" class="tsd-kind-icon">Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="interfaces/_background_http_.session.html" class="tsd-kind-icon">Session</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="interfaces/_background_http_.task.html" class="tsd-kind-icon">Task</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="globals.html#session-1" class="tsd-kind-icon">session</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="session-1" class="tsd-anchor"></a>
+					<h3>session</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/_background_http_.session.html" class="tsd-signature-type">Session</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L8">background-http.d.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get or create a background download/upload session by id.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/_background_http_.session.html" class="tsd-signature-type">Session</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" tsd-kind-module tsd-is-not-exported">
+					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="globals.html">"background-<wbr>http"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="interfaces/_background_http_.erroreventdata.html" class="tsd-kind-icon">Error<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="interfaces/_background_http_.progresseventdata.html" class="tsd-kind-icon">Progress<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="interfaces/_background_http_.request.html" class="tsd-kind-icon">Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="interfaces/_background_http_.session.html" class="tsd-kind-icon">Session</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="interfaces/_background_http_.task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="globals.html#session-1" class="tsd-kind-icon">session</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
