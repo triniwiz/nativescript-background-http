@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProgressEventData | Background HTTP for NativeScript</title>
+	<title>Request | Background HTTP for NativeScript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">&quot;background-http&quot;</a>
+					<a href="../globals.html">&quot;nativescript-background-http&quot;</a>
 				</li>
 				<li>
-					<a href="_background_http_.progresseventdata.html">ProgressEventData</a>
+					<a href="_nativescript_background_http_.request.html">Request</a>
 				</li>
 			</ul>
-			<h1>Interface ProgressEventData</h1>
+			<h1>Interface Request</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Provides the current and total bytes of long running transfer tasks.</p>
+						<p>Encapsulates the information required to initiate new background transfers.</p>
 					</div>
 				</div>
 			</section>
@@ -76,12 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">EventData</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ProgressEventData</span>
-							</li>
-						</ul>
+						<span class="target">Request</span>
 					</li>
 				</ul>
 			</section>
@@ -92,10 +87,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_background_http_.progresseventdata.html#currentbytes" class="tsd-kind-icon">current<wbr>Bytes</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_background_http_.progresseventdata.html#eventname" class="tsd-kind-icon">event<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_background_http_.progresseventdata.html#object" class="tsd-kind-icon">object</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_background_http_.progresseventdata.html#totalbytes" class="tsd-kind-icon">total<wbr>Bytes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_nativescript_background_http_.request.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_nativescript_background_http_.request.html#headers" class="tsd-kind-icon">headers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_nativescript_background_http_.request.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_nativescript_background_http_.request.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,64 +99,70 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="currentbytes" class="tsd-anchor"></a>
-					<h3>current<wbr>Bytes</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L28">background-http.d.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L128">background-http.d.ts:128</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The bytes transfered so far.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="eventname" class="tsd-anchor"></a>
-					<h3>event<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">event<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from EventData.eventName</p>
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/d.ts/data/observable/observable.d.ts#L12">d.ts/data/observable/observable.d.ts:12</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name of the event.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="object" class="tsd-anchor"></a>
-					<h3>object</h3>
-					<div class="tsd-signature tsd-kind-icon">object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from EventData.object</p>
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/d.ts/data/observable/observable.d.ts#L16">d.ts/data/observable/observable.d.ts:16</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The Observable instance that has raised the event.</p>
+							<p>Use this to help you identify the task.
+								Sets the task&#39;s description property.
+							You can store serialized JSON object.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="totalbytes" class="tsd-anchor"></a>
-					<h3>total<wbr>Bytes</h3>
-					<div class="tsd-signature tsd-kind-icon">total<wbr>Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="headers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers</h3>
+					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L33">background-http.d.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L121">background-http.d.ts:121</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The expected bytes to transfer.</p>
+							<p>Specify additional HTTP headers.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="method" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> method</h3>
+					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L116">background-http.d.ts:116</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets or set the HTTP method.
+							By default &#39;GET&#39; will be used.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L110">background-http.d.ts:110</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets or sets the request url.</p>
 						</div>
 					</div>
 				</section>
@@ -171,44 +172,44 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../globals.html">"background-<wbr>http"</a>
+						<a href="../globals.html">"nativescript-<wbr>background-<wbr>http"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_background_http_.erroreventdata.html" class="tsd-kind-icon">Error<wbr>Event<wbr>Data</a>
+						<a href="_nativescript_background_http_.erroreventdata.html" class="tsd-kind-icon">Error<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_nativescript_background_http_.progresseventdata.html" class="tsd-kind-icon">Progress<wbr>Event<wbr>Data</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_background_http_.progresseventdata.html" class="tsd-kind-icon">Progress<wbr>Event<wbr>Data</a>
+						<a href="_nativescript_background_http_.request.html" class="tsd-kind-icon">Request</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_background_http_.progresseventdata.html#currentbytes" class="tsd-kind-icon">current<wbr>Bytes</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_background_http_.progresseventdata.html#eventname" class="tsd-kind-icon">event<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_background_http_.progresseventdata.html#object" class="tsd-kind-icon">object</a>
+								<a href="_nativescript_background_http_.request.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_background_http_.progresseventdata.html#totalbytes" class="tsd-kind-icon">total<wbr>Bytes</a>
+								<a href="_nativescript_background_http_.request.html#headers" class="tsd-kind-icon">headers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_nativescript_background_http_.request.html#method" class="tsd-kind-icon">method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_nativescript_background_http_.request.html#url" class="tsd-kind-icon">url</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_background_http_.request.html" class="tsd-kind-icon">Request</a>
+						<a href="_nativescript_background_http_.session.html" class="tsd-kind-icon">Session</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_background_http_.session.html" class="tsd-kind-icon">Session</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_background_http_.task.html" class="tsd-kind-icon">Task</a>
+						<a href="_nativescript_background_http_.task.html" class="tsd-kind-icon">Task</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../globals.html#session-1" class="tsd-kind-icon">session</a>
