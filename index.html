@@ -60,12 +60,7 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p>A cross platform plugin for <a href="http://www.nativescript.org">the NativeScript framework</a>.</p>
-				<p>Supports background upload for</p>
-				<ul>
-					<li>iOS</li>
-					<li>Android</li>
-				</ul>
+				<p>A cross platform plugin for <a href="http://www.nativescript.org">the NativeScript framework</a>, that provides background upload for iOS and Android.</p>
 				<h3 id="source">Source</h3>
 				<ul>
 					<li><a href="http://github.com/NativeScript/nativescript-background-http">GitHub</a></li>
@@ -75,7 +70,7 @@
 				<h3 id="license">License</h3>
 				<p><a href="https://github.com/NativeScript/nativescript-background-http/blob/master/LICENSE">Apache-2.0</a></p>
 				<h3 id="how-to-background-upload">How-To Background Upload</h3>
-				<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> bghttp = <span class="hljs-built_in">require</span>(<span class="hljs-string">"nativescript-background-http"</span>);
+				<pre><code class="lang-js"><span class="hljs-keyword">var</span> bghttp = <span class="hljs-built_in">require</span>(<span class="hljs-string">"nativescript-background-http"</span>);
 
 <span class="hljs-keyword">var</span> session = bghttp.session(<span class="hljs-string">"image-upload"</span>);
 
@@ -107,7 +102,7 @@ task.on(<span class="hljs-string">"complete"</span>, logEvent);
 					<li>status</li>
 				</ul>
 				<p>So you can bind to task properties in the UI markup:</p>
-				<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">items</span>=<span class="hljs-value">"{{ tasks }}"</span>&gt;</span>
+				<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">items</span>=<span class="hljs-value">"{{ tasks }}"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">ListView.itemTemplate</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">StackLayout</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Label</span> <span class="hljs-attribute">text</span>=<span class="hljs-value">"{{ upload, 'Upload: ' + upload + ' / ' + totalUpload }}"</span> /&gt;</span>
