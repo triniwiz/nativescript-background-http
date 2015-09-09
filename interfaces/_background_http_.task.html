@@ -85,12 +85,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Events</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-event tsd-parent-kind-interface"><a href="_background_http_.task.html#on" class="tsd-kind-icon">on</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_background_http_.task.html#description" class="tsd-kind-icon">description</a></li>
@@ -99,15 +93,86 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_background_http_.task.html#upload" class="tsd-kind-icon">upload</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_background_http_.task.html#on" class="tsd-kind-icon">on</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Events</h2>
-				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-interface">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L43">background-http.d.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Get the description of the task, that was provided during the task creation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L60">background-http.d.ts:60</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the status of the background upload task.
+								Possible states: &quot;panding&quot; | &quot;uploading&quot; | &quot;error&quot; | &quot;complete&quot;.
+							(read-only)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="totalupload" class="tsd-anchor"></a>
+					<h3>total<wbr>Upload</h3>
+					<div class="tsd-signature tsd-kind-icon">total<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L53">background-http.d.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the expected total count of bytes to upload. (read-only)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="upload" class="tsd-anchor"></a>
+					<h3>upload</h3>
+					<div class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L48">background-http.d.ts:48</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the current count of uploaded bytes. (read-only)</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
-					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-interface">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"progress"</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
@@ -117,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L66">background-http.d.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L67">background-http.d.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -157,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L73">background-http.d.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L74">background-http.d.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,9 +234,15 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <span class="tsd-signature-type">"error"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event - &quot;error&quot;</p>
+									</div>
 								</li>
 								<li>
 									<h5>handler: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A handler that will receive the error details</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -197,26 +268,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L80">background-http.d.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L81">background-http.d.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Subscribe for the transfer progress.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>handler</dt>
-									<dd><p>A handler that will receive a progress event with the current and expected total bytes</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <span class="tsd-signature-type">"progress"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event - &quot;progress&quot;</p>
+									</div>
 								</li>
 								<li>
 									<h5>handler: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A handler that will receive a progress event with the current and expected total bytes</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -242,26 +314,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L87">background-http.d.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L88">background-http.d.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Subscribe for successful completion of the task</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>handler</dt>
-									<dd><p>A function that will be called with general event data upon successful completion</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <span class="tsd-signature-type">"complete"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event - &quot;complete&quot;</p>
+									</div>
 								</li>
 								<li>
 									<h5>handler: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A function that will be called with general event data upon successful completion</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -285,71 +358,6 @@
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L42">background-http.d.ts:42</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Get the description of the task, that was provided during the task creation.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="status" class="tsd-anchor"></a>
-					<h3>status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L59">background-http.d.ts:59</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets the status of the background upload task.
-								Possible states: &quot;panding&quot; | &quot;uploading&quot; | &quot;error&quot; | &quot;complete&quot;.
-							(read-only)</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="totalupload" class="tsd-anchor"></a>
-					<h3>total<wbr>Upload</h3>
-					<div class="tsd-signature tsd-kind-icon">total<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L52">background-http.d.ts:52</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets the expected total count of bytes to upload. (read-only)</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="upload" class="tsd-anchor"></a>
-					<h3>upload</h3>
-					<div class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/NativeScript/nativescript-background-http/blob/master/source/background-http.d.ts#L47">background-http.d.ts:47</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets the current count of uploaded bytes. (read-only)</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -380,9 +388,6 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="_background_http_.task.html" class="tsd-kind-icon">Task</a>
 						<ul>
-							<li class=" tsd-kind-event tsd-parent-kind-interface">
-								<a href="_background_http_.task.html#on" class="tsd-kind-icon">on</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_background_http_.task.html#description" class="tsd-kind-icon">description</a>
 							</li>
@@ -394,6 +399,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_background_http_.task.html#upload" class="tsd-kind-icon">upload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_background_http_.task.html#on" class="tsd-kind-icon">on</a>
 							</li>
 						</ul>
 					</li>

@@ -66,8 +66,17 @@
 					<li>iOS</li>
 					<li>Android</li>
 				</ul>
-				<h3 id="how-to-background-upload">How-to Background Upload</h3>
+				<h3 id="source">Source</h3>
+				<ul>
+					<li><a href="http://github.com/NativeScript/nativescript-background-http">GitHub</a></li>
+					<li><a href="http://nativescript.github.io/nativescript-background-http/">Web Site</a></li>
+					<li><a href="http://nativescript.github.io/nativescript-background-http/globals.html">API Reference</a></li>
+				</ul>
+				<h3 id="license">License</h3>
+				<p><a href="https://github.com/NativeScript/nativescript-background-http/blob/master/LICENSE">Apache-2.0</a></p>
+				<h3 id="how-to-background-upload">How-To Background Upload</h3>
 				<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> background_http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"background-http"</span>);
+
 <span class="hljs-keyword">var</span> session = background_http.session(<span class="hljs-string">"image-upload"</span>);
 
 <span class="hljs-keyword">var</span> request = {
@@ -89,6 +98,25 @@ task.on(<span class="hljs-string">"complete"</span>, logEvent);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onEvent</span>(<span class="hljs-params">e</span>) </span>{
     <span class="hljs-built_in">console</span>.log(e.eventName);
 }
+</code></pre>
+				<h3 id="how-to-data-binding">How-To Data Binding</h3>
+				<p>Task implementations are Observable and fire property change events for </p>
+				<ul>
+					<li>upload</li>
+					<li>totalUpload</li>
+					<li>status</li>
+				</ul>
+				<p>So you can bind to task properties in the UI markup:</p>
+				<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">items</span>=<span class="hljs-value">"{{ tasks }}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ListView.itemTemplate</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">StackLayout</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Label</span> <span class="hljs-attribute">text</span>=<span class="hljs-value">"{{ upload, 'Upload: ' + upload + ' / ' + totalUpload }}"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Progress</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"{{ upload }}"</span> <span class="hljs-attribute">maxValue</span>=<span class="hljs-value">"{{ totalUpload }}"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Label</span> <span class="hljs-attribute">text</span>=<span class="hljs-value">"{{ description, 'description: ' + description }}"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Label</span> <span class="hljs-attribute">text</span>=<span class="hljs-value">"{{ status, 'status: ' + status }}"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">StackLayout</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ListView.itemTemplate</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ListView</span>&gt;</span>
 </code></pre>
 			</div>
 		</div>
