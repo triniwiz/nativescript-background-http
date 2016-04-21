@@ -32,7 +32,7 @@ var ProgressReceiver = servicePackage.AbstractUploadServiceReceiver.extend({
         task.setTotalUpload(totalUpload);
         task.setStatus("complete");
         task.notify({ eventName: "progress", object: task, currentBytes: totalUpload, totalBytes: totalUpload });
-        task.notify({ eventName: "complete", object: task });
+        task.notify({ eventName: "complete", object: task ,response:{code:reponseCode,message:responseMessage}}});
     }
 });
 
